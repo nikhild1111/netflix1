@@ -1,0 +1,408 @@
+
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    *{
+margin: 0;
+padding: 0;
+/* font-family: "Poppins", sans-serif; */
+    }
+   
+.main{
+    height: 83vh; 
+ 
+    width: 100vw;
+    box-sizing: border-box;
+    background-image: url("assets/imagex/IN-en-20240226-popsignuptwoweeks-perspective_alpha_website_small.jpg");
+    /* position: fixed; */
+    background-repeat: no-repeat;
+/* background-size: max(1200px,100vw); */
+background-size: cover;
+/* background-position: center; */
+/* position: relative; */
+/* background-position: center center; */
+/* top: 0px; */
+/* left: 0px; */
+/* right: 0px; */
+}
+.main .box{
+    width: 100vw;
+    height: 83vh;
+    background-color: black;
+    opacity: 0.44;
+    position: absolute;
+    top: 0;
+    /* left: 0px; */
+    /* right: 0px;  */
+    /* box-sizing: border-box; */
+}
+.main nav{
+      display: flex;
+      margin: auto;
+      justify-content: space-between;
+      max-width:80vw;
+      align-items: center;
+      position: relative;
+     z-index: 11;
+    }
+    .btn{
+        /* display: block;  */
+   
+    }
+.btn :nth-child(1){
+    /* display: flex; */
+     padding: 6px 30px;
+     margin: 30px 7px;
+     border-radius: 5px;
+     border-color: white;
+     background-color: transparent;
+     color: white;
+     font-weight: 2000;
+     position: relative;
+     z-index: 11;
+     cursor: pointer;
+     flex-shrink: 5;
+}
+.btn :nth-child(2){
+     padding: 6px 16px;
+     border-radius: 7px;
+     background-color: red;
+     color: white;
+     font-weight: 800;
+     position: relative;
+     z-index: 11;
+     cursor: pointer;
+}
+.hero{
+    height: 80%;
+    /* 100%: This is the value assigned to the height property. It means that the height of elements with the .hero class will be set to 100% of the height of their containing block. In other words, the height of the .hero element will be the same as its parent element's height. */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  position: relative;
+  z-index: 11;
+  gap: 15px;
+}
+.hero div:nth-child(1){
+    font-size: 35px;
+    font-weight: bold;
+    /* line-height: 1.5; */
+    text-align: center;
+    margin: 5px;
+    /* padding: 0px 85px; */
+ 
+}
+.hero div:nth-child(2){
+    font-size: 20px;
+    /* line-height: 3; */
+    text-align: center;
+
+}
+.hero div:nth-child(3){
+
+    font-size: 20px;
+    /*what font use for finding the font*/
+    /* line-height: 2.5; */
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;;
+    text-align: center;
+    margin: -3px 30px;
+}
+.newbtn .get{
+    background-color: red;
+    /* border-color: white; */
+    padding: 13px 30px 13px 30px;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+
+}
+.newbtn #username{
+   
+    background-color: transparent;
+    border-color: white;
+    padding: 17px 90px 15px 6px;
+    cursor: pointer;
+    color: white;
+    border-radius: 3px;
+    margin: 7px;
+}
+.my{
+    background-color: rgb(237, 205, 205);
+    height: 7px;
+    width: 100%; 
+}
+@media only screen and  (min-width:960px){
+    .main{
+        height: 100vh;
+        
+
+    }
+    .main .box{
+        height: 100vh;
+    }
+   
+}
+@media only screen and  (max-width:450px){
+    .main{
+       
+    height: 80vh;
+        width: 110%; 
+
+     }
+    .main .box{
+        
+    height: 80vh;
+         width: 110%;
+    } 
+    .my{
+        width: 110%; 
+    }
+ } 
+ @media only screen and (max-width:500px){
+
+    /* .main{
+        height: 55vh;
+        /* position: relative;
+        left: 0px; */
+    /* }  */
+    .hero{
+        height: 80%;
+    }
+    .main nav{
+        max-width: 100vw;
+    }
+    
+        .newbtn{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+ 
+        gap: 9px;
+    }
+    .newbtn #username{
+        display: flex;
+        flex-direction: column;
+
+        padding: 15px 175px 15px 7px
+    }
+  
+   
+    }
+.sec {
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    max-width: 70vw;
+    color: white;
+    margin: auto;
+    
+}
+.con :nth-child(1){
+font-size: 35px;
+font-weight: bolder;
+margin: 10px;
+
+}
+.con :nth-child(2){
+font-size: 22px;
+
+
+}
+.con{
+display: flex;
+flex-direction: column;
+
+   
+}
+.secimg{
+
+    position: relative;
+}
+.secimg img{
+
+    width: 34vw;
+    position: relative;
+    z-index: 11;
+   
+}
+.secimg video{
+ 
+    position: absolute;
+    top: 37px;
+    right: 7px;
+    width: 29vw;
+}
+
+.third .secimg video{
+ 
+    position: absolute;
+    top: 30px;
+    right: 6vw;
+    width: 22vw;
+}    
+
+
+body {
+    background-color: black;
+ 
+}
+.my{
+    background-color: rgb(237, 205, 205);
+    height: 7px;
+     width: 110%; 
+}
+@media only screen and (max-width:900px){
+ 
+    .sec{
+        flex-direction: column;
+        height: 69vh;
+       
+    }
+    .con :nth-child(1){
+        font-size: 29px;
+        font-weight: bolder;
+        margin: 15px;
+        
+        }
+        .con :nth-child(2){
+        font-size: 16px;
+        
+        
+        }
+        .secimg img{
+
+            width: 300px;
+            position: relative;
+            z-index: 11;
+           
+           
+        }
+        .secimg video{
+         
+            position: absolute;
+            top: 41px;
+            right: 25px;
+            width: 235px;
+           
+        }
+        .third .secimg video{
+ 
+            position: absolute;
+    top: 14px;
+    right: 53px;
+    width: 191px;
+        }
+    
+}
+
+.faq{
+    /* margin: auto; */
+    background-color: black;
+    color: white;
+    padding: 34px;
+}
+.faq h2{
+    text-align: center;
+    font-size: 48px;
+}
+.faqbox:hover {
+    background-color:#414141;
+ transition:  all 1s ease-out ;
+    color: white;
+}
+.faqbox img{
+    filter: invert(2);
+}
+.faqbox{
+    display: flex;
+    background-color:#2d2d2d;
+    justify-content: space-between;
+    padding: 24px;
+    max-width: 60vw;
+    margin: 34px auto ;
+    /* margin-bottom: 2px; */
+    cursor: pointer;
+font-size: 24px;
+}
+.ll{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+}
+
+footer{
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 14px ;
+}
+footer .questions{
+    padding: 34px 0;
+    font-weight: 1000;
+    font-size: 16px;
+}
+
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  color: white;
+}
+.footer a {
+    font-size: 18px;
+    color: white;
+}
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    font-size: 14px;
+}
+@media only screen and (min-width:1000px){
+    .ll #username{
+   
+        background-color: transparent;
+        border-color: white;
+        padding: 17px 501px 13px 16px;
+        cursor: pointer;
+        color: white;
+        border-radius: 3px;
+        margin: 7px;
+    }
+}
+.last select{
+    
+        /* display: flex; */
+         padding: 6px 30px;
+         margin: 30px 7px;
+         border-radius: 5px;
+         border-color: white;
+         background-color: transparent;
+         color: white;
+         font-weight: 2000;
+         position: relative;
+         z-index: 11;
+         cursor: pointer;
+         flex-shrink: 5;
+    
+}
+@media screen and (max-width:1300px){
+    .footer {
+        display: grid;
+        grid-template-columns:  1fr 1fr;
+     gap: 34px;
+    } 
+    .faq h2 {
+        font-size: 32px;
+    }
+}
+@media screen and (max-width:400px){
+    .footer {
+        display: grid;
+        grid-template-columns:  1fr ;
+     gap: 34px;
+    } 
+}
